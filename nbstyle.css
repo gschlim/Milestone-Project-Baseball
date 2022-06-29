@@ -8,8 +8,24 @@ h3 {
     font-style: italic;
     color: darkblue;
 }
+
 table, tr, th, td {
-    border: 1px solid black;
+    border: 1px solid darkslateblue;
     background-color:antiquewhite;
-    margin: 10px;
+    color:darkblue;
+    z-index: 1;
 }
+
+#bbbackground {
+    z-index: -3;
+}
+
+form {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+

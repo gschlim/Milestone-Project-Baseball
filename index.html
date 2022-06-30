@@ -2,7 +2,7 @@
     <head>
         <title>Numberball Simulator</title>
         <link rel="stylesheet" href="nbstyle.css">
-        <script>nbscript.js</script>
+        <script src="nbscript.js"></script>
     </head>
     <body>
         <br>
@@ -11,11 +11,12 @@
         <h3>Bottom of the ninth, can you be the hero?</h3>
         <br>
         <form>
-            <label for="teamname">Submit your team name:</label>
-            <input type="text" name="teamname"><br>
-            <input type="button" value="Submit">
+            <label for="teamname">Submit your team name:</label><br><br>
+            <input type="text" id="team_name" name="teamname" value="Home Team" ><br><br>
+            <input type="button" onclick="showInput()" value="Submit!">
         </form>
-        <table>
+        <div>
+        <table id="scorebug">
             <tr>
                 <th style="width:100px">Monsters</th>
                 <th style="width:30px">3</th>
@@ -25,7 +26,7 @@
                 <th>Bottom</th>
             </tr>
             <tr>
-                <th style="width:100px">Home Team</th>
+                <th style="width:100px"><span id='display'></th>
                 <th style="width:30px">2</th>
                 <th>X X X</th>
                 <th>X X</th>
@@ -33,6 +34,7 @@
                 <th>9</th>
             </tr>
         </table>
-        <img src="baseball-diamond-silhouette-24.png" alt="Baseball Field" id="bbbackground">
+        <img src="baseball-diamond-silhouette-24.png" alt="Baseball Field" id="background"
+        </div>
     </body>
 </html>

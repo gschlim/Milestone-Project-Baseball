@@ -9,15 +9,11 @@ h3 {
     color: darkblue;
 }
 
-table, tr, th, td {
-    border: 1px solid darkslateblue;
-    background-color:antiquewhite;
-    color:darkblue;
-    z-index: 1;
-}
-
-#bbbackground {
+#background {
     z-index: -3;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 form {
@@ -25,8 +21,23 @@ form {
 }
 
 div {
-    text-align: center;
+    position: relative;
+    transform: translate(25%, 0);
 }
     
+table, tr, th, td {
+    border: 1px solid darkslateblue;
+    background-color:antiquewhite;
+    color:darkblue;
+    z-index: 1;
+    text-align: center;
+}
 
+table {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: auto;
+    margin: auto;
+}
 

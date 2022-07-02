@@ -9,6 +9,16 @@ h3 {
     color: darkblue;
 }
 
+h4 {
+    text-align: center;
+    color: green;
+}
+
+h5 {
+    text-align: center;
+    color: green;
+}
+
 #background {
     z-index: -3;
     position: absolute;

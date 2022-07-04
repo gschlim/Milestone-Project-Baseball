@@ -41,6 +41,15 @@
             </tr>
         </table>
         <img src="baseball-diamond-silhouette-24.png" alt="Baseball Field" id="background"> 
+        <form id="thepitch">
+            <label>Submit your hitting number</label>
+            <input type="text" id="swing" value="1"><br>
+            <input type="button" id="gameplay" onclick="heresThePitch(), answer()" value="Pitch!"><br>
+            <label>Pitcher's Number</label>
+            <input type="text" id="pitch" value="99" readonly><br>
+            <label>Difference (Result)</label>
+            <input type="text" id="result" value="2" readonly><br>
+        </form>
         </div>
     </body>
 </html>

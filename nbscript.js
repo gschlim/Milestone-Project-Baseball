@@ -19,4 +19,25 @@ function answer(){
     }
 }
     
+function winlose(){
+    var swingnum = document.getElementById('swing').value
+    var pitchnum = document.getElementById('pitch').value
+    var pitchdiff = Math.abs(swingnum - pitchnum)
+    if (pitchdiff > 50) {
+        var absdiff = 100 - pitchdiff
+    } else {
+        var absdiff = pitchdiff  
+    }
+    if (absdiff < 4) {
+        document.getElementById('resultb').value = "HOME RUN"
+    } else if (absdiff < 11) {
+        document.getElementById('resultb').value = "Single"
+    } else  if (absdiff < 41) {
+        document.getElementById('resultb').value = "Flyout"
+    } else {
+        document.getElementById('resultb').value = "Strikeout!"
+    }
+
+}
+
 

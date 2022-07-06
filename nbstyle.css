@@ -1,3 +1,7 @@
+body {
+    background-color: antiquewhite;
+}
+    
 h1 {
     text-align: center;
     color: green;
@@ -34,13 +38,19 @@ div {
     position: relative;
     transform: translate(25%, 0);
 }
+
+@font-face {
+    font-family: scoreboard;
+    src: url(JdLed3Regular-1Xg2.ttf)
+}
     
 table, tr, th, td {
-    border: 1px solid darkslateblue;
-    background-color:antiquewhite;
-    color:darkblue;
+    border: 1px solid #f0ffab;
+    background-color:darkslateblue;
+    color:#f0ffab;
     z-index: 1;
     text-align: center;
+    font-family: scoreboard;
 }
 
 table {
@@ -51,12 +61,21 @@ table {
     margin: auto;
 }
 
+#gameplay {
+    transform: translateX(-300%);
+}
+
 #thepitch {
     position: absolute;
     top: 100;
-    left: 450;
+    left: 455;
+    text-align: right;
+    color: white;
+    font-family: sans-serif;
     z-index: 2;
     width: auto;
     margin: auto;
 }
+
+
 

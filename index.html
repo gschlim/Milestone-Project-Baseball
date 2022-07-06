@@ -16,7 +16,7 @@
             a difference of 2. If the difference between the hitting and pitching numbers is 10 or less, you win the game!</h5>
         <br>
         <form>
-            <label for="teamname">Submit your team name:</label><br><br>
+            <label for="teamname" style="color: darkblue;">Submit your team name:</label><br><br>
             <input type="text" id="team_name" name="teamname" value="Home Team" ><br><br>
             <input type="button" onclick="showInput()" value="Submit!">
         </form>
@@ -42,9 +42,9 @@
         </table>
         <img src="baseball-diamond-silhouette-24.png" alt="Baseball Field" id="background"> 
         <form id="thepitch">
-            <label>Submit your hitting number</label>
-            <input type="text" id="swing" value="1"><br>
-            <input type="button" id="gameplay" onclick="heresThePitch(), answer(), winlose()" value="Pitch!"><br>
+            <label>Submit Hitter's Number</label>
+            <input type="text" id="swing" value="1"><br><br>
+            <input type="button" id="gameplay" onclick="heresThePitch(), answer(), winlose()" value="Pitch!"><br><br>
             <label>Pitcher's Number</label>
             <input type="text" id="pitch" value="99" readonly><br>
             <label>Difference (Result)</label>

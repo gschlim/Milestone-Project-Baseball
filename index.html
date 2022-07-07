@@ -2,12 +2,12 @@
     <head>
         <title>Numberball Simulator</title>
         <link rel="stylesheet" href="nbstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline">
         <script src="nbscript.js"></script>
     </head>
     <body>
         <br>
-        <h1>Numberball Simulator</h1>
-        <br>
+        <h1 style="font-family: 'Bungee Inline', sans-serif; font-size: 80px;">Numberball</h1>
         <h3>Bottom of the ninth, can you be the hero?</h3>
         <br>
         <h4>Rules</h4>
@@ -49,14 +49,16 @@
             <label>Pitcher's Number</label>
             <input type="text" id="pitch" value="99" readonly><br>
             <label>Difference (Result)</label>
-            <input type="text" id="result" value="2" readonly><br>
+            <input type="text" id="result" value="2" readonly><br><br>
             <input type="text" id="resultb" value="???????" readonly>
         </form>
         </div>
         <div id="main"></div>
-        <br>
+        
+        <div id="repeat">
         <form>
-            <input type="button" value="Refresh to Play Again">
+            <input type="button" id="restart" onclick="unlock()" value="Play Again?">
         </form>
+        </div>
     </body>
 </html>

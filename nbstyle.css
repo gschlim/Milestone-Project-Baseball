@@ -6,6 +6,10 @@ h1 {
     text-align: center;
     color: green;
     font-family: sans-serif;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
 }
 
 h3 {
@@ -19,12 +23,18 @@ h4 {
     text-align: center;
     color: green;
     font-family: sans-serif;
+    background-color: gold;
+    width: 75%;
+    margin: auto;
 }
 
 h5 {
     text-align: center;
     color: green;
     font-family: sans-serif;
+    background-color: gold;
+    width: 75%;
+    margin: auto;
 }
 
 #background {
@@ -83,11 +93,17 @@ table {
 
 #repeat{
     position: absolute;
-    top: 930px;
+    top: 840px;
     left: 943px;
 }
 
 #resultb {
     transform: translateX(-50%);
     text-align: center;
+}
+
+p {
+    background-color: gold;
+    width: 75%;
+    margin: auto;
 }
